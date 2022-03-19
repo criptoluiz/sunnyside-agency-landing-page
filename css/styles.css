@@ -101,11 +101,11 @@ nav {
     background-repeat: no-repeat;
 }
 
-#img-1 {
+.img-1 {
     background-image: url('../images/desktop/image-transform.jpg');
 }
 
-#img-2 {
+.img-2 {
     background-image: url('../images/desktop/image-stand-out.jpg');
 }
 
@@ -216,7 +216,6 @@ footer {
 }
 
 .footer-logo {
-    width: 180px;
     margin-bottom: 2em;
 }
 
@@ -253,8 +252,58 @@ footer {
     color: white;
 }
 
+@media (max-width: 900px) {
+    #g-design-col,
+    #photography-col {
+        padding: 30px 30px;
+    }
+}
+
 @media (max-width: 700px) {
     .block-1 {
-        background-size: cover;
+        background-image: url('../images/mobile/image-header.jpg');
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .text-col {
+        text-align: center;
+        padding: 2em 0;
+    }
+    .img-col {
+        height: 300px;
+    }
+    #g-design-col,
+    #photography-col {
+        height: 500px;
+        padding: 30px 30px;
+    }
+    #g-design-col h4,
+    #photography-col h4 {
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+    .testimonial {
+        margin-bottom: 0px;
+        padding-bottom: 0;
+    }
+    .testimonial-row {
+        padding-bottom: 50px;
+    }
+    .gallery-row img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+    .gallery-row div {
+        height: 200px;
+        width: 50%;
+        padding: 0;
+    }
+
+    footer {
+        padding-top: 80px;
+        padding-bottom: 30px;
     }
 }
